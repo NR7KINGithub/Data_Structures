@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-This repository contains my solutions to various Data Structures and Algorithms (DSA) problems from LeetCode, Code360 & GeeksForGeeks. The solutions are implemented in **Python**, **Python3**, **Java**, and **C++**.  
+This repository contains my solutions to various Data Structures and Algorithms (DSA) problems from LeetCode, Code360 & GeeksforGeeks. The solutions are implemented in **Python**, **Python3**, **Java**, and **C++**.  
 
 ## Topics 
 - **Arrays**  
@@ -16,5 +16,5 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - More To Come!
 
 This repository will be continuously updated as I solve more DSA problems.
-Browse through folders named by problem topics.  
+Browse through folders named by problem topics.
 Happy Coding! :)
