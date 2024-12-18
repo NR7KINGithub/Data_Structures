@@ -1,6 +1,6 @@
 from typing import Optional
 
-# Definition for a binary tree node.
+# Definition for a binary tree node
 class Node:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -16,11 +16,10 @@ class Solution:
         return 1 + max(left, right)
 
 if __name__ == "__main__":
-    # Construct tree [3, 9, 20, None, None, 15, 7]
     root = Node(3)
     root.left = Node(9)
     root.right = Node(20)
     root.right.left = Node(15)
     root.right.right = Node(7)
 
-    print("Maximum Depth:", Solution().maxDepth(root))
+    print(Solution().maxDepth(root))
