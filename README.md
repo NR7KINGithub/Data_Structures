@@ -6,9 +6,13 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - **Arrays**  
 - **Linked Lists**  
 - **Binary Search**  
-- **Heaps**  
+- **Heaps**
+- **Stack**
+- **Queue**
 - **String**  
 - **Binary Tree**
+- **Binary Search Tree**
+- **Dynamic Programming**
 - More To Come!
 
 This repository will be continuously updated as I solve more DSA problems on LeetCode.
