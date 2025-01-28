@@ -12,6 +12,7 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - **String**  
 - **Binary Tree**
 - **Binary Search Tree**
+- **Graph**
 - **Dynamic Programming**
 - More To Come!
 
