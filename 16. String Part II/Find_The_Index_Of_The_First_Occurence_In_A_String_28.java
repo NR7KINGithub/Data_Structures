@@ -1,4 +1,4 @@
-public class Needle_And_Haystack {
+public class Find_The_Index_Of_The_First_Occurence_In_A_String_28 {
     public int strStr(String haystack, String needle) {
         for(int i = 0; ;i++) 
         {
@@ -12,7 +12,7 @@ public class Needle_And_Haystack {
         }
     }
     public static void main(String[] args) {
-        Needle_And_Haystack ob = new Needle_And_Haystack();
+        Find_The_Index_Of_The_First_Occurence_In_A_String_28 ob = new Find_The_Index_Of_The_First_Occurence_In_A_String_28();
         System.out.println(ob.strStr("happyandhappy", "happy"));
     }
 }

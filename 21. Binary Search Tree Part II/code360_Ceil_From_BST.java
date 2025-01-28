@@ -1,18 +1,18 @@
 import java.util.*;
 
-class TreeNode<T> {
+class Node<T> {
     T data;
-    TreeNode<T> left;
-    TreeNode<T> right;
+    Node<T> left;
+    Node<T> right;
 
-    TreeNode(T data) {
+    Node(T data) {
         this.data = data;
         this.left = null;
         this.right = null;
     }
 }
-public class Ceil_From_BST {
-    public static int findCeil(TreeNode<Integer> node, int x) {
+public class code360_Ceil_From_BST {
+    public static int findCeil(Node<Integer> node, int x) {
         int ceil = -1;
         while (node != null) {
             if (node.data == x) {
@@ -27,12 +27,12 @@ public class Ceil_From_BST {
         return ceil;
     }
    public static void main(String[] args) {
-        TreeNode<Integer> root = new TreeNode<>(8);
-        root.left = new TreeNode<>(5);
-        root.right = new TreeNode<>(10);
-        root.left.left = new TreeNode<>(2);
-        root.left.right = new TreeNode<>(6);
-        root.left.right.right = new TreeNode<>(7);
+        Node<Integer> root = new Node<>(8);
+        root.left = new Node<>(5);
+        root.right = new Node<>(10);
+        root.left.left = new Node<>(2);
+        root.left.right = new Node<>(6);
+        root.left.right.right = new Node<>(7);
         Scanner sc = new Scanner(System.in);
         System.out.println(findCeil(root, 7));
         sc.close();

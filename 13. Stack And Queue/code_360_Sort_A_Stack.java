@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Sort_A_Stack {
+public class code_360_Sort_A_Stack {
     // Function to sort the stack
     public static void sortStack(Stack<Integer> stack) {
         // Base case: if stack is empty, return

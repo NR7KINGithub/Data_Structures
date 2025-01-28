@@ -1,5 +1,5 @@
 # Definition for a binary tree node
-class TreeNode(object):
+class Node(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
@@ -19,21 +19,21 @@ def isSameTree(p, q):
 
     return same(p,q)
 
-p = TreeNode(1)
-p.left = TreeNode(2)
-p.right = TreeNode(2)
-p.left.left = TreeNode(3)
-p.right.right = TreeNode(3)
-p.left.right = TreeNode(4)
-p.right.left = TreeNode(4)
+p = Node(1)
+p.left = Node(2)
+p.right = Node(2)
+p.left.left = Node(3)
+p.right.right = Node(3)
+p.left.right = Node(4)
+p.right.left = Node(4)
 
 
-q = TreeNode(1)
-q.left = TreeNode(2)
-q.right = TreeNode(2)
-q.left.left = TreeNode(3)
-q.right.right = TreeNode(3)
-q.left.right = TreeNode(4)
-q.right.left = TreeNode(4)
+q = Node(1)
+q.left = Node(2)
+q.right = Node(2)
+q.left.left = Node(3)
+q.right.right = Node(3)
+q.left.right = Node(4)
+q.right.left = Node(4)
 
 print(isSameTree(p, q))

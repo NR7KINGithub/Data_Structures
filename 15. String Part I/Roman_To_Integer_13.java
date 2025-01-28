@@ -1,4 +1,4 @@
-public class Roman_To_Integer {
+public class Roman_To_Integer_13 {
     public int romanToInt(String s) {
         int ans = 0, num = 0;
         for (int i = s.length()-1; i >= 0; i--) {
@@ -19,7 +19,7 @@ public class Roman_To_Integer {
         return ans;
     }
     public static void main(String args[]) {
-        Roman_To_Integer ob = new Roman_To_Integer();
+        Roman_To_Integer_13 ob = new Roman_To_Integer_13();
         System.out.println(ob.romanToInt("MCMXCIV"));
     }
 }
