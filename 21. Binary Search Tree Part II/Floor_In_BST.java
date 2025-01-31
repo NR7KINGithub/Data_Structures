@@ -11,7 +11,7 @@ class Node<T> {
         this.right = null;
     }
 }
-public class code360_Floor_In_BST {
+public class Floor_In_BST {
     public static int floorInBST(Node<Integer> root, int X) {
         int floor = -1;
         while (root != null) {

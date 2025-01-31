@@ -11,7 +11,7 @@ class Node<T> {
         this.right = null;
     }
 }
-public class code360_Ceil_From_BST {
+public class Ceil_From_BST {
     public static int findCeil(Node<Integer> node, int x) {
         int ceil = -1;
         while (node != null) {

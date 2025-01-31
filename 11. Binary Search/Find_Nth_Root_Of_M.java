@@ -1,4 +1,4 @@
-public class code360_Find_Nth_Root_Of_M {
+public class Find_Nth_Root_Of_M {
     public static int NthRoot(int n, int m) {
         if(m == 1) {
             return 1;
