@@ -1,0 +1,40 @@
+def myPow(x: float, n: int) -> float:
+    ans = 1.0
+    nn = n
+    if nn < 0:
+        nn = -1*nn
+    while nn:
+        if nn % 2:
+            ans = ans*x
+            nn = nn-1
+        else:
+            x = x*x
+            nn = nn//2
+    if n < 0:
+        ans = 1.0/ans
+    return ans
+    
+if __name__ == "__main__":
+    print(myPow(2, -1))
+
+"""// Java Solution
+class Solution {
+    public double myPow(double x, int n) {
+        double ans = 1.0;
+        long nn = n;
+        if (nn < 0) {
+            nn = -nn;
+        }
+        while (nn != 0) {
+            if (nn % 2 != 0) {
+                ans *= x;
+                nn -= 1;
+            }
+            else {
+                x *= x;
+                nn /= 2;
+            }
+        }
+        return (n < 0)? 1 / ans : ans;
+    }
+}"""
