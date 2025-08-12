@@ -1,3 +1,11 @@
+// The problem Locking the Tree of Space involves designing and implementing three operations on an M-Ary tree:
+// 1. lock(x, uid): Grants exclusive access to the subtree rooted at x for user uid. Succeeds only if no ancestors or descendants of x are locked by any user.
+// 2. unlock(x, uid): Reverts the lock on x by user uid. Succeeds only if x was previously locked by uid.
+// 3. upgradeLock(x, uid): Upgrades a lock from a descendant of x to x itself for user uid. Succeeds only if:
+// i. x is not currently locked.
+// ii. All locked descendants of x are locked by uid.
+// iii. x has at least one locked descendant (if none, return false).
+
 import java.util.*;
 
 class Node {
