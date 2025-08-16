@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Counter</title>
+</head>
+<body>
+  <section id="content">
+    <!--Code Here -->
+    <h2>Simple Counter</h2>
+    <!--Code Here -->
+    <button id="decrement">-</button>
+    <span id="counter">0</span>
+    <button id="increment">+</button>
+  </section>
+
+  <style>
+    #content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin: 0 12px 0 0;
+      font-size: 20px;
+    }
+
+    #decrement,
+    #increment {
+      /* Code Here */
+      background-color: #0056b3; 
+      /* Code Here */
+      color: white;           
+      border: none;
+      padding: 8px 12px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 4px;
+      user-select: none;
+    }
+
+    #counter {
+      min-width: 28px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+
+  <script>
+    // Code Here 
+    document.addEventListener("DOMContentLoaded", function () {
+      var inc = document.getElementById("increment");
+      var dec = document.getElementById("decrement");
+
+      inc.addEventListener("click", function () {
+        var counterText = document.getElementById("counter").innerText;
+        document.getElementById("counter").innerText = parseInt(counterText, 10) + 1;
+      });
+
+      dec.addEventListener("click", function () {
+        var counterText = document.getElementById("counter").innerText;
+        document.getElementById("counter").innerText = parseInt(counterText, 10) - 1;
+      });
+    });
+    // Code Here
+  </script>
+</body>
+</html>

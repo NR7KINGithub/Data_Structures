@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animals</title>
+</head>
+<body>
+  <section id="animals">
+    <div class="animal-container">
+      
+      <div class="animal">
+        <!-- Code Here -->
+        <img src="https://mettl.com/uploads/482135/8e9c5fe8-bd43-4a4d-9776-839b3a6abff6.jpg" 
+             id="tiger-image" 
+             class="animal-image" 
+             alt="">
+        <!-- Code Here -->
+        <p>Tiger</p>
+      </div>
+      
+      <div class="animal">
+        <!-- Code Here -->
+        <img src="https://mettl.com/uploads/482135/6c4199e6-6e74-4af6-bc74-306c3aba036d.jpg" 
+             id="lion-image" 
+             class="animal-image" 
+             alt="Lion">
+        <!-- Code Here -->
+        <p>Lion</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .animal-image {
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      /* Code Here */
+      height: 100px;
+      width: 100px;
+      /* Code Here */
+    }
+    .green-border {
+      border-color: green;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var animalImages = document.querySelectorAll(".animal-image");
+      // Code Here
+      animalImages.forEach(function (image) {
+        image.addEventListener("click", function () {
+          this.classList.toggle("green-border");
+        });
+      });
+      // Code Here
+    });
+  </script>
+</body>
+</html>

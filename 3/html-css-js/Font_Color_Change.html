@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Font Color Change</title>
+</head>
+<body>
+  <!--Code Here -->
+  <h3>Font Color Change</h3>
+  <div id="one" height="100">Text 1</div>
+  <div id="two" height="100">Text 2</div>
+  <div>
+    <button id="submit" onclick="changeFontColor()">Change Font color</button>
+  </div>
+  <!--Code Here -->
+
+  <style>
+    /* Code Here */
+    div {
+      height: 50px;
+    }
+    /* Code Here */
+  </style>
+
+  <script>
+    // Code Here
+    function changeFontColor() {
+      var one = document.getElementById("one");
+      var two = document.getElementById("two");
+
+      one.style.color = "#00FFFF";
+      two.style.color = "#ADFF2F";
+    }
+    // Code Here
+  </script>
+</body>
+</html>

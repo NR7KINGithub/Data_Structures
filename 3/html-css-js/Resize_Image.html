@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resize Image</title>
+</head>
+<body>
+  <!--Code Here -->
+  <img src="https://st2.depositphotos.com/3591429/5245/i/600/depositphotos_52453715-stock-photo-hands-holding-word-welcome.jpg" id="image1">
+  <img src="https://thumbs.dreamstime.com/b/welcome-word-welcome-english-alphabet-colors-rainbow-balloons-white-background-holidays-education-132610316.jpg" id="image2">
+  <div>
+    <button id="submit" type="button" onclick="resizeImages()">Submit</button>
+  </div>
+  <!--Code Here -->
+
+  <style>
+    /* Code Here */
+    #submit {
+      cursor: pointer;
+    }
+    /* Code Here */
+  </style>
+
+  <script>
+    // Code Here 
+    function resizeImages() {
+        let image1 = document.getElementById("image1");
+        let image2 = document.getElementById("image2");
+
+        image1.style.width = "150px";
+        image1.style.height = "150px";
+
+        image2.style.width = "150px";
+        image2.style.height = "150px";
+    }
+    // Code Here
+  </script>
+</body>
+</html>

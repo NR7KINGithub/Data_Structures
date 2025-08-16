@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Changing Box</title>
+</head>
+<body>
+  <section id="content">
+    <h2>Color Changing Box</h2>
+    <div id="color-box"></div>
+    <!-- Code Here -->
+    <button id="red-button">red</button>
+    <button id="green-button">green</button>
+    <button id="blue-button">blue</button>
+    <!-- Code Here -->
+  </section>
+
+  <style>
+    #color-box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+    /* Code Hear */
+    #red-button {
+      background-color: red;
+      color: white;
+    }
+
+    #green-button {
+      background-color: green;
+      color: white;
+    }
+
+    #blue-button {
+      background-color: blue;
+      color: white;
+    }
+    /* Code Here */
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var colorBox = document.getElementById("color-box");
+    var redButton = document.getElementById("red-button");
+    var greenButton = document.getElementById("green-button");
+    var blueButton = document.getElementById("blue-button");
+    // Code Here
+    redButton.addEventListener("click", function () {
+        colorBox.style.backgroundColor = "red";
+    });
+
+    greenButton.addEventListener("click", function () {
+        colorBox.style.backgroundColor = "green";
+    });
+
+    blueButton.addEventListener("click", function () {
+        colorBox.style.backgroundColor = "blue";
+    });
+    // Code Here
+    });
+  </script>
+</body>
+</html>
