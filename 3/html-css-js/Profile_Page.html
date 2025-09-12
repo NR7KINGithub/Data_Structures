@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+</head>
+<body>
+  
+  <h1>Profile Page</h1>
+  <div class="profile-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <span id="nameError" class="error"></span>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br>
+    <!--Code Here -->
+    <button id="saveBtn" >Save Changes</button>
+    <!--Code Here -->
+  </div>
+
+  <style>
+    #saveBtn {
+        /* Code Here */
+        background-color: #28a745;
+        font-size: 18px;
+        /* Code Here */
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .error {
+        color: red;
+    }
+  </style>
+
+  <script>
+    // Code Here
+    document.getElementById('saveBtn').addEventListener( 'click', function() {
+        const name = document.getElementById('name').value;
+        const nameError = document.getElementById('nameError');
+
+        if (name.length < 3) {
+            nameError.textContent = 'Name Must Be Atleast 3 Characters Long'
+        } else {
+            nameError.textContent = '';
+            alert('Profile Updated Successfully!');
+        }
+    });
+    // Code Here
+  </script>
+</body>
+</html>
